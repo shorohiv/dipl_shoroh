@@ -3,9 +3,16 @@
 @import 'utils/mixins';//миксины scss
 
 //Общее
-//@import 'main/stylesheet';// шрифты
-//@import 'main/reset'; // сброс стилей для кроссбраузерности
-//@import 'main/common'; // общие стили
+@import 'main/stylesheet';// шрифты
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+@import 'main/common'; // общие стили
+
+.container {
+    max-width: 1410;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
 @import 'components/header';
+@import 'components/first-section';

@@ -1,0 +1,40 @@
+// Помощники
+@import 'utils/parameters';// переменные
+@import 'utils/mixins';//миксины scss
+
+.container {
+    display: flex;
+
+    .first-section__content {
+        margin-left: 6rem;
+        margin-top: 10rem;
+        width: 45%;
+        .first-section__title {
+            font-weight: 700;
+            font-size: 4.883rem;
+            color: #150C01;
+            width: 55rem;
+        }
+
+    
+
+    .first-section__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+
+    }
+
+    .first-section__buttons {
+        .first-section__button {
+
+            &--inverse {}
+        }
+    }
+    }
+    .first-section__pic {
+        width: 55%;
+
+    }
+}
