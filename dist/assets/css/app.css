@@ -266,7 +266,11 @@ button {
     border-radius: 5px;
     display: inline-flex;
     box-sizing: border-box;
-    padding: 2rem 3rem; }
+    padding: 2rem 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 2rem;
+    right: 13rem; }
 
 .container {
   display: flex; }
@@ -278,11 +282,33 @@ button {
       font-weight: 700;
       font-size: 4.883rem;
       color: #150C01;
-      width: 55rem; }
+      width: 59rem; }
     .container .first-section__content .first-section__text {
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      width: 57rem;
+      margin: 3.5rem 0; }
+    .container .first-section__content .first-section__buttons {
+      margin-top: 8rem; }
+      .container .first-section__content .first-section__buttons .first-section__button {
+        font-size: 1.6rem;
+        color: #FFFFFF;
+        background: #DC780B;
+        border-radius: 0.5rem;
+        padding: 2rem 4rem;
+        margin-right: 2rem; }
+        .container .first-section__content .first-section__buttons .first-section__button--inverse {
+          font-size: 1.6rem;
+          color: #DC780B;
+          background: transparent;
+          box-shadow: 0px 0px 2px 1px;
+          padding: 2rem 4rem; }
   .container .first-section__pic {
-    width: 55%; }
+    position: absolute; }
+    .container .first-section__pic img {
+      width: 54vw;
+      position: relative;
+      top: -9rem;
+      left: 61rem; }

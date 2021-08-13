@@ -4,16 +4,19 @@
 
 .container {
     display: flex;
+    
 
     .first-section__content {
         margin-left: 6rem;
         margin-top: 10rem;
         width: 45%;
+        
         .first-section__title {
             font-weight: 700;
             font-size: 4.883rem;
             color: #150C01;
-            width: 55rem;
+            width: 59rem;
+            
         }
 
     
@@ -23,18 +26,42 @@
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
-
+        width: 57rem;
+        margin: 3.5rem 0;
     }
 
     .first-section__buttons {
-        .first-section__button {
+        margin-top: 8rem;
 
-            &--inverse {}
+        .first-section__button {
+            font-size: 1.6rem;
+            color: #FFFFFF;
+            background: $c-secondary;
+            border-radius: 0.5rem;
+            padding: 2rem 4rem;
+            margin-right: 2rem;
+
+            &--inverse {
+                font-size: 1.6rem;
+                color: $c-secondary;
+                background: transparent;
+                box-shadow: 0px 0px 2px 1px;
+                
+                padding: 2rem 4rem;
+            }
         }
     }
     }
     .first-section__pic {
-        width: 55%;
+        
+        position: absolute;
+        
+        img {
+            width: 54vw;
+            position: relative;
+            top: -9rem;
+            left: 61rem;
+        }
 
     }
 }

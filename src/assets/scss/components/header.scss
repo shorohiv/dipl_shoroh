@@ -39,7 +39,12 @@
         border-radius: 5px;
         display: inline-flex;
         box-sizing: border-box;
-        padding: 2rem 3rem;
+        padding: 2rem 4rem;
+        position: absolute;
+        z-index: 1;
+        top: 2rem;
+        right: 13rem;
+    
 
     }
 }

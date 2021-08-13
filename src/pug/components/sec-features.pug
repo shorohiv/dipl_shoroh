@@ -1,0 +1,16 @@
+section.features
+    .container
+        .features__titles
+            h3.first-title
+                span features
+            h2.second-title
+                span Food with a New Passion
+        .items__row 
+            mixin item(img, title, description)
+                .item
+                    img(src=img, alt=features).item__img
+                    .item__title=title
+                    .item__description=description
+            +item("./assets/imgs/house.png","Quality Food","It can be a very secure path to earn good money and make you very successful creative entrepreneur.")
+            +item("./assets/imgs/moto.png","Food Delivery","It can be a very secure path to earn good money and make you very successful creative entrepreneur.")
+            +item("./assets/imgs/smile.png","Super Taste","It can be a very secure path to earn good money and make you very successful creative entrepreneur.")
