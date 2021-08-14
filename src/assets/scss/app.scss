@@ -8,7 +8,7 @@
 @import 'main/common'; // общие стили
 
 .container {
-    max-width: 1410;
+    max-width: 1410px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -16,4 +16,10 @@
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
 @import 'components/header';
 @import 'components/first-section';
-@import 'components/sec-features;
+@import 'components/sec-features';
+@import 'components/sec-aboutus';
+@import 'components/menu';
+@import 'components/download';
+@import 'components/testimonial';
+@import 'components/contact';
+@import 'components/footer';

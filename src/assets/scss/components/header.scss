@@ -24,7 +24,7 @@
         
         .header-link {
             font-size: 1.6rem;
-            margin: 2rem;
+            padding: 2rem;
             display: inline-block;
 
             &--inverse {
@@ -40,10 +40,11 @@
         display: inline-flex;
         box-sizing: border-box;
         padding: 2rem 4rem;
-        position: absolute;
+        position: relative;
         z-index: 1;
-        top: 2rem;
-        right: 13rem;
+        top: 0;
+        right: 0;
+        margin-left: auto;
     
 
     }

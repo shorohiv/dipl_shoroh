@@ -1,3 +1,65 @@
 // Помощники
 @import 'utils/parameters';// переменные
 @import 'utils/mixins';//миксины scss
+.features {
+    margin: 7rem 10rem;
+
+.container {
+    display: block;
+    
+    .features__titles {
+
+       
+        
+        .first-title
+         {
+            font-size: 1.6rem;
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: $c-secondary;
+            opacity: 0.7;
+            margin: 2rem 0;
+        }
+
+        .second-title
+         {
+            font-family: $headers-font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3.125rem;
+            text-transform: capitalize;
+            text-align: center;
+            color: #150C01;
+            margin: 2rem 0;
+        }
+    }
+
+    .items__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item {
+            text-align: center;
+            width: 22vw;
+            margin: 3rem 0;
+            &__img {
+               margin-bottom: 1rem;
+            }
+            &__title {
+                font-family: $headers-font;
+                font-weight: bold;
+                font-size: 2.5rem;
+                margin: 1rem 0;
+                
+            }
+            &__description {
+                line-height: 150%;
+                opacity: 0.7;
+                color: #150C01;
+                font-size: 1.6rem
+            }
+        }
+    }
+}
+}

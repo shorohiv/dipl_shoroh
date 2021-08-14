@@ -14,6 +14,7 @@
         .first-section__title {
             font-weight: 700;
             font-size: 4.883rem;
+            line-height: 130%;
             color: #150C01;
             width: 59rem;
             
@@ -26,8 +27,11 @@
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
+        line-height: 150%;
         width: 57rem;
         margin: 3.5rem 0;
+        color: #150C01;
+        opacity: 0.7;
     }
 
     .first-section__buttons {
@@ -45,7 +49,7 @@
                 font-size: 1.6rem;
                 color: $c-secondary;
                 background: transparent;
-                box-shadow: 0px 0px 2px 1px;
+                box-shadow: 0.5px 0.5px 0.5px 0.5px;
                 
                 padding: 2rem 4rem;
             }
@@ -54,13 +58,13 @@
     }
     .first-section__pic {
         
-        position: absolute;
+        
         
         img {
             width: 54vw;
             position: relative;
-            top: -9rem;
-            left: 61rem;
+            top: -7rem;
+            left: -2rem;
         }
 
     }
