@@ -5,6 +5,7 @@
 .container {
     background: #FBF1E7;
     height: 52rem;
+    
     .dl__content{
         display: flex;
         flex-direction: column;
@@ -65,6 +66,9 @@
                     box-shadow: 0.5px 0.5px 0.5px 0.5px;
                     border-radius: 5px;
                     padding: 1.5rem 3rem;
+                    img {
+                        padding-right: 1rem;
+                    }
                 }
                 
             }
