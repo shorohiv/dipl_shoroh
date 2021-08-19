@@ -1,0 +1,17 @@
+section.menu
+    .container
+        .menu__items
+            mixin item(img, title, price, description, plus, rating)
+                .item
+                    img(src=img, alt=menu).item__img
+                    .item__title=title
+                    .item__price=price
+                    .item__description=description
+                    img(src="plus", alt="").item__plus   
+                    .item__rating(data-rating="2")
+                        .rating__star
+                        .rating__star
+                        .rating__star
+                        .rating__star
+                        .rating__star
+                +item("./assets/imgs/chicken.png","Vegie Muffen","16$", "There are many things are needed to start the Fast Food Business.","./assets/imgs/plus.png", "data-rating="4")

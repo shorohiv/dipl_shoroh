@@ -2,8 +2,9 @@
 @import 'utils/parameters';// переменные
 @import 'utils/mixins';//миксины scss
 .download {
-.container {
     background: #FBF1E7;
+.container {
+    
     height: 52rem;
     
     .dl__content{

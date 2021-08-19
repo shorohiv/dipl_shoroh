@@ -411,24 +411,83 @@ button {
         padding: 1.5rem 2rem;
         width: fit-content; }
 
-.download .container {
-  background: #FBF1E7;
-  height: 52rem; }
-  .download .container .dl__content {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    position: relative;
-    left: 17rem;
-    top: 8rem; }
-    .download .container .dl__content .first-title {
+.download {
+  background: #FBF1E7; }
+  .download .container {
+    height: 52rem; }
+    .download .container .dl__content {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      position: relative;
+      left: 17rem;
+      top: 8rem; }
+      .download .container .dl__content .first-title {
+        font-size: 1.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #DC780B;
+        opacity: 0.7;
+        margin: 1rem 0; }
+      .download .container .dl__content .second-title {
+        font-family: "Philosopher", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 130%;
+        font-size: 3.125rem;
+        text-transform: capitalize;
+        color: #150C01;
+        margin: 1rem 0;
+        width: 35vw; }
+      .download .container .dl__content .dl__text {
+        font-family: Roboto;
+        font-style: normal;
+        color: #150C01;
+        opacity: 0.7;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 150%;
+        margin: 3.5rem 0;
+        width: 39vw; }
+      .download .container .dl__content .dl__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 27vw; }
+        .download .container .dl__content .dl__buttons .button {
+          font-size: 1.6rem;
+          color: #FFFFFF;
+          background: #150C01;
+          padding: 1.5rem 3rem;
+          border-radius: 5px; }
+          .download .container .dl__content .dl__buttons .button img {
+            padding-right: 1rem; }
+          .download .container .dl__content .dl__buttons .button--inverse {
+            font-size: 1.6rem;
+            background: transparent;
+            box-shadow: 0.5px 0.5px 0.5px 0.5px;
+            border-radius: 5px;
+            padding: 1.5rem 3rem; }
+            .download .container .dl__content .dl__buttons .button--inverse img {
+              padding-right: 1rem; }
+    .download .container .dl__pic img {
+      position: relative;
+      left: 29rem;
+      bottom: 6.5rem; }
+
+.testimonial {
+  margin: 10rem; }
+  .testimonial__items {
+    margin: 0 auto;
+    width: 75rem;
+    text-align: center; }
+    .testimonial__items .first-title {
       font-size: 1.6rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: #DC780B;
       opacity: 0.7;
-      margin: 1rem 0; }
-    .download .container .dl__content .second-title {
+      text-align: center; }
+    .testimonial__items .second-title {
       font-family: "Philosopher", sans-serif;
       font-style: normal;
       font-weight: bold;
@@ -436,9 +495,9 @@ button {
       font-size: 3.125rem;
       text-transform: capitalize;
       color: #150C01;
-      margin: 1rem 0;
-      width: 35vw; }
-    .download .container .dl__content .dl__text {
+      text-align: center;
+      margin: 2rem 0; }
+    .testimonial__items .first-part {
       font-family: Roboto;
       font-style: normal;
       color: #150C01;
@@ -446,35 +505,31 @@ button {
       font-weight: 500;
       font-size: 1.6rem;
       line-height: 150%;
-      margin: 3.5rem 0;
-      width: 39vw; }
-    .download .container .dl__content .dl__buttons {
+      text-align: center; }
+    .testimonial__items .sec-part {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 150%;
       display: flex;
-      justify-content: space-between;
-      width: 27vw; }
-      .download .container .dl__content .dl__buttons .button {
-        font-size: 1.6rem;
-        color: #FFFFFF;
-        background: #150C01;
-        padding: 1.5rem 3rem;
-        border-radius: 5px; }
-        .download .container .dl__content .dl__buttons .button img {
-          padding-right: 1rem; }
-        .download .container .dl__content .dl__buttons .button--inverse {
-          font-size: 1.6rem;
-          background: transparent;
-          box-shadow: 0.5px 0.5px 0.5px 0.5px;
-          border-radius: 5px;
-          padding: 1.5rem 3rem; }
-          .download .container .dl__content .dl__buttons .button--inverse img {
-            padding-right: 1rem; }
-  .download .container .dl__pic img {
-    position: relative;
-    left: 29rem;
-    bottom: 6.5rem; }
+      align-items: center;
+      text-align: center;
+      color: #000000;
+      margin: 1.5rem 0; }
+    .testimonial__items .name {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #000000;
+      margin: 1.5rem 0; }
 
 .contact {
-  margin: 20rem; }
+  padding: 15rem;
+  background: #FBF1E7; }
   .contact .container .contact-items {
     margin: 0 auto; }
     .contact .container .contact-items .contact__titles .first-title {
@@ -483,7 +538,8 @@ button {
       text-transform: uppercase;
       color: #DC780B;
       opacity: 0.7;
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      text-align: center; }
     .contact .container .contact-items .contact__titles .second-title {
       font-family: "Philosopher", sans-serif;
       font-style: normal;
@@ -493,28 +549,30 @@ button {
       text-transform: capitalize;
       color: #150C01;
       margin: 1rem 0;
-      width: 35vw; }
-    .contact .container .contact-items .contact__input-group .form-control {
-      background: #FFFFFF;
-      border-radius: 10px;
-      width: 55vw;
-      height: 10vh; }
-    .contact .container .contact-items .contact__input-group ::placeholder {
-      font-size: 1.6rem;
-      line-height: 254%;
-      display: flex;
-      align-items: center;
-      color: #000000;
-      opacity: 0.5;
-      position: relative; }
-    .contact .container .contact-items .contact__input-group .send {
-      background: #DC780B;
-      border-radius: 10px;
-      padding: 2rem 3rem;
-      display: flex;
-      align-items: center;
       text-align: center;
-      color: #FFFFFF;
-      position: relative;
-      z-index: 1;
-      right: 0; }
+      padding: 0 13rem; }
+    .contact .container .contact-items .contact__input-group {
+      display: inline-block;
+      margin-top: 2.5rem; }
+      .contact .container .contact-items .contact__input-group .form-control {
+        background: #FFFFFF;
+        border-radius: 10px;
+        width: 55vw;
+        height: 10vh;
+        position: relative;
+        left: 10.5rem;
+        bottom: 0.3rem; }
+      .contact .container .contact-items .contact__input-group ::placeholder {
+        font-size: 1.6rem;
+        line-height: 254%;
+        color: #000000;
+        opacity: 0.5; }
+      .contact .container .contact-items .contact__input-group .send {
+        background: #DC780B;
+        border-radius: 10px;
+        padding: 2.6rem 5rem;
+        text-align: center;
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 1; }
