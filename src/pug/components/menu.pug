@@ -1,17 +1,69 @@
 section.menu
     .container
-        .menu__items
-            mixin item(img, title, price, description, plus, rating)
-                .item
-                    img(src=img, alt=menu).item__img
-                    .item__title=title
-                    .item__price=price
-                    .item__description=description
-                    img(src="plus", alt="").item__plus   
-                    .item__rating(data-rating="2")
-                        .rating__star
-                        .rating__star
-                        .rating__star
-                        .rating__star
-                        .rating__star
-                +item("./assets/imgs/chicken.png","Vegie Muffen","16$", "There are many things are needed to start the Fast Food Business.","./assets/imgs/plus.png", "data-rating="4")
+        .section-parts
+            .text__items
+                h3.first-title menu
+                h2.second-title Food Full of treaty Love
+                p.text-part There are many things are needed to start the Fast Food Business. You need not only Just Food Stalls with Persons but also specialized equipment, Skills to manage Customers, 
+            .menu__items
+                mixin item(args={})
+                    .item
+                        a(href="#").item__img-wrap
+                            img(src=args.img_src, alt=menu).item-img
+                        .item__body 
+                            .item__top 
+                                a(href="#").item__title=args.title
+                                .item__price=args.price
+                        .item__description=args.description
+                        .item__bottom
+                            button.item__btn +  
+                            .item__rating(data-rating=args.rating)
+                                .rating__star
+                                .rating__star
+                                .rating__star
+                                .rating__star
+                                .rating__star
+                +item({
+                    img_src:'./assets/imgs/chicken.png',
+                    title:"Vegie Muffen",
+                    price:"16$",
+                    description:"There are many things are needed to start the Fast Food Business.",
+                    rating_numb: 4
+                    })
+                +item({
+                    img_src:'./assets/imgs/salads.png',
+                    title:"Salads",
+                    price:"12$",
+                    description:"There are many things are needed to start the Fast Food Business.",
+                    rating_numb: 5
+                    })
+                +item({
+                    img_src:'./assets/imgs/burger.png',
+                    title:"Burger",
+                    price:"10$",
+                    description:"There are many things are needed to start the Fast Food Business.",
+                    rating_numb: "3"
+                    })
+                +item({
+                    img_src:'./assets/imgs/delmonico.png',
+                    title:"Delmonico Steak dish",
+                    price:"14$",
+                    description:"There are many things are needed to start the Fast Food Business.",
+                    rating_numb: "2"
+                    })
+                +item({
+                    img_src:'./assets/imgs/egg.png',
+                    title:"Egg Masala",
+                    price:"9$",
+                    description:"There are many things are needed to start the Fast Food Business.",
+                    rating_numb: 4
+                    })
+                +item({
+                    img_src:'./assets/imgs/peach.png',
+                    title:"Peach Melba dish",
+                    price:"15$",
+                    description:"There are many things are needed to start the Fast Food Business.",
+                    rating_numb: 3
+                    })
+        .more 
+            a(href="#").more__more Learn More

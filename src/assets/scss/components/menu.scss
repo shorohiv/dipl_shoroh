@@ -1,3 +1,173 @@
 // Помощники
 @import 'utils/parameters';// переменные
 @import 'utils/mixins';//миксины scss
+.menu {
+  .container{
+    .section-parts{
+      display: block;
+    }
+    
+    .text__items {
+      margin: 0 auto;
+      width: 75rem;
+      text-align: center;
+    }
+      .first-title {
+          font-size: 1.6rem;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: $c-secondary;
+          opacity: 0.7;
+          text-align: center;
+      }
+  
+      .second-title {
+          font-family: $headers-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 130%;
+          font-size: 3.125rem;
+          text-transform: capitalize;
+          color: #150C01;
+          text-align: center;
+          margin: 2rem 0;
+          
+      }
+      .text-part {
+          font-family: Roboto;
+          font-style: normal;
+          color: #150C01;
+          opacity: 0.7;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 150%;
+          text-align: center;
+          margin-bottom: 4rem;
+      }
+      
+    .menu__items {
+      .item{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 75px 10px 10px 10px;
+        /*свойства для превью*/
+        max-width: 36rem;
+        margin: 0 3rem 2rem;
+        float: left;
+  
+        &__img-wrap{
+          display: block;
+          overflow: hidden;
+          border-radius: 7.6rem 1rem 7.6rem 0;
+        }
+          .item-img {
+            max-width: 100%;
+        } 
+        &__body{
+          padding: 1.5rem;
+        }
+          .item__top{
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Philosopher', sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #150C01;
+            margin: 0 0 1rem;
+          }
+            .item__title{
+              font-family: inherit;
+              color: inherit;
+              text-decoration: none;
+            }
+            .item__price{
+              font-family: inherit;
+              color: inherit;
+              text-decoration: none;
+            }
+          
+        
+        &__description{
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.6rem;
+          line-height: 150%;
+          display: flex;
+          align-items: center;
+          color: #150C01;
+          opacity: 0.7;
+          margin: 0 1rem 1rem;
+        }
+        &__bottom{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 1rem 1rem;
+        }
+          .item__btn {
+            background: $c-secondary;
+            border-radius: 5px;
+            font-size: 2rem;
+            color: #FFFFFF;
+          }
+        
+       
+          .item__rating{
+            display: flex;
+          }
+            .rating__star {
+              height: 1.6rem;
+              width: 1.6rem;
+              background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23EDEDED'/%3E%3C/svg%3E%0A");
+            }
+          
+                    
+          [data-rating="1"] .rating__star:nth-child(1) {
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+          }
+                    
+          [data-rating="2"] .rating__star {
+            &:nth-child(1),
+            &:nth-child(2){
+              background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6.18179L10.1863 5.79957L7.99681 0.299072L5.80734 5.79957L0 6.18179L4.45419 9.96385L2.99256 15.701L7.99681 12.5379L13.0011 15.701L11.5395 9.96385L16 6.18179Z' fill='%23DC780B'/%3E%3C/svg%3E%0A");
+            }
+          }
+                    
+          [data-rating="3"] .rating__star {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3){
+              background-image: url("./assets/imgs/star_grey.png");
+            }
+          }
+                    
+          [data-rating="4"] .rating__star
+          {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4)
+            {
+              background-image: url("./assets/imgs/star_grey.png");
+            }
+          }
+                    
+          [data-rating="5"] .rating__star {
+            background-image: url("./assets/imgs/star_orange.png"); 
+          }
+        }
+      }
+      
+  }}
+  .more {
+    text-align: center;
+    border: 1px solid #DC780B
+      &__more{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $c-secondary;
+      }
+  }

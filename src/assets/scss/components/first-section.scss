@@ -4,7 +4,6 @@
 
 .container {
     display: flex;
-    
 
     .first-section__content {
         margin-left: 6rem;
@@ -64,6 +63,7 @@
             position: relative;
             top: -7rem;
             left: -2rem;
+            max-width: 100%;
         }
 
     }
