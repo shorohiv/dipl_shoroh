@@ -3,12 +3,14 @@
 @import 'utils/mixins';//миксины scss
 
 .container {
-    display: flex;
-
+    .items-first{
+        display: flex;
+    }
     .first-section__content {
         margin-left: 6rem;
         margin-top: 10rem;
         width: 45%;
+        
         
         .first-section__title {
             font-weight: 700;
@@ -66,5 +68,12 @@
             max-width: 100%;
         }
 
+    }
+}
+
+@media (max-width:$md) {
+
+    img {
+        max-width: 95%;
     }
 }

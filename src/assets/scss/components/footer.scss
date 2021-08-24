@@ -1,3 +1,42 @@
 // Помощники
 @import 'utils/parameters';// переменные
 @import 'utils/mixins';//миксины scss
+
+.footer {
+    height: 43rem;
+    background: #252525;
+    ;
+    .container {
+    
+      .link {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 3rem;
+        color: #FFFFFF;
+        opacity: 0.7;
+      }
+      .link--inverse {
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: #FFFFFF;
+        line-height: 150%;
+      }
+      .logo {
+    
+    }
+    .items{
+        height: 43rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+
+       
+    }
+}
+}

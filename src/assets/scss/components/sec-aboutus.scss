@@ -4,12 +4,13 @@
 .about {
     margin: 5rem 0;
     max-height: 58rem;
-.container {
-    display: flex;
     
-
+.container {
+   
     .about__pic {
+        width: 50%;
         .food {
+            max-width: 100%;
             position: relative;
             z-index: 1;
             left: 7.5rem;
@@ -18,17 +19,15 @@
     .about__pink {
         .pink {
             position: relative;
-            bottom: 19.5rem;
-            right: 57.8rem;
+            bottom: 70rem;
+            right: 2.8rem;
         }
     }
     .about__content {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-end;
+        width: 50%;
         position: relative;
-        right: 20rem;
-        top: 8rem;
+        left: 71rem;
+        bottom: 124rem;
         
         .first-title {
             font-size: 1.6rem;
